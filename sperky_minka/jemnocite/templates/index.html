@@ -4,23 +4,60 @@
     <meta charset="UTF-8">
     <title>Jemnocité</title>
     <style>
+       .fill {
+    margin:0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    }
+
+    .fill img {
+    flex-shrink: 0;
+    width:100%
+    }
+
+    .heading {
+      position: absolute;
+      top: 80px;
+      right: 0;
+      width: 70%;
+      padding-right: 10%;
+      padding-left: 5%;
+      text-shadow: 2px 2px 18px #46534f;
+    }
+
+    .moth img {
+        width:150px;
+    }
+
 
     </style>
 </head>
 <body>
 {% extends "base.html" %}
 {% block content %}
-
-<div class="container">
-  <div class="row">
-    <div class="col-sm">
-        <p>wdwd</p>
+<section>
+    <h1 style="text-align:center; font-size: 64px;">Jemnocité</h1>
+</section>
+<section class="first-section">
+<div class="row">
+    <div class="col-md-6">
+        <div class="fill">
+            <img style="background-image: url(static/media/jemnocite-moth-1.jpg"); src="static/media/jemnocite-moth-1.jpg">
+        </div>
+  </div>
+    <div class="col-md-6">
+      <div class="heading">
+        <p style="font-size: 64px; padding-top: 25%; color: white; font-family: 'Arima', cursive;">She was drawn to damaged souls</br> like a moth to a flame</p>
     </div>
-    <div class="col-sm">
-      <p>dedfed</p>
-    </div>
+        <div class="moth">
+           <img style="background-image: url(static/media/background-moth.png"); src="static/media/background-moth.png">
+        </div>
   </div>
 </div>
+</section>
 
 
 

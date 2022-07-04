@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <title>HikeHunter</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arima:wght@400;700&family=Dosis:wght@200;400&display=swap" rel="stylesheet">
     <style>
-        .navbar {
-            background-color: #A37734;
-            padding: 15px 40px 15px 40px;
-            }
 
         p {
             color: #434e49;
@@ -18,58 +17,52 @@
             color: #5d7780;
            }
 
-        .nav-link:hover {
-            color: white;
-           }
-
-        .nav-link {
-            color: #CEA465;
-            font-size: 21px;
-           }
-
-        .nav-item {
-            padding-left: 20px;
-            }
-
-
         h1 {
         padding-bottom: 20px;
+        color: #9ba17f;
         }
 
-        .btn-primary {
-        background-color: #862824;
+        .nav {
+        padding:30px;
+        font-size: 32px;
         }
 
-        .section-primary {
-        background-color: #236E52;
-        height: 500px;
+        .nav-link {
+        color: #95a17f;
         }
 
-        .section-secondary {
-        background-color: #A37734;
+        .nav-link:hover {
+        color: #767a5f;
         }
+
+        body {
+        background-color: #e8e4db;
+        font-family: 'Dosis', sans-serif;
+        margin:0epx;
+        }
+
+        h1, h2, h3 {
+        font-family: 'Arima', cursive;
+        }
+
+
 
     </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-sm">
-      <div class="container-fluid">
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="{% url 'index' %}" style="font-size:38px">Jemnocite</a>
-    </li>
 
-  </ul>
-    <ul class="navbar-nav">
-      <li class="nav-item">
-      <a class="nav-link" href="{% url 'index' %}">Projects</a>
-    </li>
-        <li class="nav-item">
-                <a class="nav-link" href="{% url 'index' %}">Contact</a>
-        </li>
-    </ul>
-</div>
-</nav>
+<ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link" href="#">Collection</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">About</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Contact</a>
+  </li>
+</ul>
+
 
 
 {% block content %}
@@ -77,6 +70,6 @@
 {% endblock %}
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
