@@ -19,17 +19,29 @@
     }
 
     .heading {
-      position: absolute;
-      top: 80px;
-      right: 0;
-      width: 70%;
-      padding-right: 10%;
-      padding-left: 5%;
+      position: relative;
+      padding-top: 30px;
+      margin-left:-70%;
+
+      padding-right:30px;
       text-shadow: 2px 2px 18px #46534f;
     }
 
     .moth img {
-        width:150px;
+        width:180px;
+        position: absolute;
+        margin-left:1520px;
+        margin-top: -100px;
+    }
+
+    .moth-2 img {
+        width:180px;
+        background-repeat: no;
+        transform: rotate(145deg);
+    }
+
+    h2 {
+    text-align:center;
     }
 
 
@@ -38,27 +50,95 @@
 <body>
 {% extends "base.html" %}
 {% block content %}
+
 <section>
     <h1 style="text-align:center; font-size: 64px;">Jemnocité</h1>
 </section>
-<section class="first-section">
-<div class="row">
-    <div class="col-md-6">
-        <div class="fill">
-            <img style="background-image: url(static/media/jemnocite-moth-1.jpg"); src="static/media/jemnocite-moth-1.jpg">
+
+<section class="first-section" style="margin-bottom:-200px">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="fill">
+                <img style="background-image: url(static/media/jemnocite-moth-1.jpg"); src="static/media/jemnocite-moth-1.jpg">
+            </div>
         </div>
+
+        <div class="col-md-4">
+            <div class="heading">
+                <p style="font-size: 64px; color: white; font-family: 'Arima', cursive;">She was drawn to damaged souls like a moth to a flame</p>
+            </div>
   </div>
-    <div class="col-md-6">
-      <div class="heading">
-        <p style="font-size: 64px; padding-top: 25%; color: white; font-family: 'Arima', cursive;">She was drawn to damaged souls</br> like a moth to a flame</p>
-    </div>
-        <div class="moth">
-           <img style="background-image: url(static/media/background-moth.png"); src="static/media/background-moth.png">
-        </div>
-  </div>
+
 </div>
 </section>
+                  <div class="moth">
+          <img style="background-image: url(static/media/background-moth.png"); src="static/media/background-moth.png">
+      </div>
+<section class="second-section" style="padding-bottom:350px">
+    <h2 style="padding-top: 250px">Collection</h2>
+    <div class="collection">
+        <div class="container">
+  <div class="row">
+    <div class="col" style="text-align:center">
+      <img src="static/media/jemnocite-making.jpg" style="width:100%">
+    </div>
+    <div class="col" style="text-align:center">
+      <img style="width:100%" src="static/media/jemnocite-ring.jpg">
+    </div>
+    <div class="col" style="text-align:center">
+      <img style="width:100%" src="static/media/jemnocite-ring-2.jpg">
+    </div>
+  </div>
+</div>
+    </div>
 
+</section>
+
+<section class="first-section" style="margin-top:-350px; margin-bottom:-200px">
+    <h2>About</h2>
+        <div class="row">
+            <div class="col-md-4" style="padding-top:250px; padding-left: 80px;">
+              <div>
+                  <p>The background image is placed according to the background-position property. If no background-position is specified, the image is always placed at the element's top left corner.</p>
+              </div>
+                <div class="moth-2">
+                <img style="background-image: url(static/media/background-moth-2.png"); src="static/media/background-moth-2.png">
+            </div>
+
+                </div>
+            <div class="col-md-8">
+                <div class="fill">
+                    <img style="background-image: url(static/media/jemnocite-moth-3.jpg"); src="static/media/jemnocite-moth-3.jpg">
+                </div>
+
+            </div>
+
+        </div>
+</section>
+
+<section class="second-section" style="padding-bottom:50px">
+    <h2 style="padding-top: 250px">Contact</h2>
+    <div class="collection">
+        <div class="container">
+  <div class="row">
+    <div class="col" style="text-align:left">
+        <p>Minka Dočkalová</p>
+        <p>E-mail: fefed@gmail.com</p>
+
+    </div>
+    <div class="col" style="text-align:center">
+      <img style="width:50%" src="static/media/jemnocite-ring.jpg">
+    </div>
+
+  </div>
+</div>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2022</p>
+</footer>
 
 
 {% endblock %}
